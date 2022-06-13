@@ -1,0 +1,155 @@
+
+
+
+.navigation {
+    position: relative;
+    display: block;
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.navigation a {
+    position: relative;
+    width: 110px;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.navigation b {
+    position: relative;
+    bottom: 40px;
+    transition: 0.3s ease bottom;
+}
+
+.navigation i {
+    position: relative;
+    left: 20%;
+    transition: 0.3s ease left;
+}
+
+.navigation span {
+    position: absolute;
+    width: 110px;
+    background-color: #0560fe;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.3s ease left;
+}
+
+.navigation a:hover b {
+    bottom: 0;
+}
+
+.navigation a:hover i {
+    left: -5px;
+
+}
+
+.navigation:hover span {
+    background: #0560fe;
+}
+
+.navigation a:nth-child(1):hover ~ span {
+    left: 10px;
+}
+
+.navigation a:nth-child(2):hover ~ span {
+    left: 115px;
+}
+
+.navigation a:nth-child(3):hover ~ span {
+    left: 237px;
+}
+
+.navigation a:nth-child(4):hover ~ span {
+    left:343px;
+}
+
+.navigation a:nth-child(5):hover ~ span {
+    left:458px;
+}
+
+.navigation a:nth-child(6):hover ~ span {
+    left: 575px;
+}
+
+.navigation a:nth-child(7):hover ~ span {
+    left: 680px;
+}
+
+.sign-up {
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sign-up:hover {
+    background: #2ceae5;
+    transform: translateY(-7px);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(46, 223, 229, 0.445);
+}
+
+
+
+.cards {
+    width: 1000px;
+    height: 700px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cards-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: transform 0.75s;
+}
+
+.cards:hover .cards-image {
+    transform: scale(1.15);
+}
+
+.cards-title {
+    position: absolute;
+    color: rgba(46, 223, 229, 0.445);
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.cTitle{
+    text-align: center;
+}
+
+
+
+
+
+
